@@ -1,0 +1,17 @@
+{
+  "name": "yjy-cli",
+  "version": "1.0.0",
+  "description": "自定义前端管理工具，根据内置多模板一键生成基础项目",
+  "main": "index.js",
+  "bin": {
+    "yjy": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tjianyu@foxmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^5.0.0"
+  }
+}
