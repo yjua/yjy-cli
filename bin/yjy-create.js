@@ -1,7 +1,9 @@
 #!/usr/bin/env node
-const program = require('commander')
+/* eslint-disable no-undef */
+// 创建一个新的模板
+const program = require("commander");
 
-program.parse(process.argv)
+program.parse(process.argv);
 
-console.log('create')
-console.log(program.args)
+console.log("create");
+console.log(program.args);
