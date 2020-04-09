@@ -8,8 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint --ext .js bin/",
-    "lint-fix": "eslint --fix --ext .js bin/"
+    "lint": "eslint --ext .js .",
+    "lint-fix": "eslint --fix --ext .js ."
   },
   "author": "tjianyu@foxmail.com",
   "license": "MIT",
@@ -21,6 +21,12 @@
     "ora": "^4.0.3"
   },
   "devDependencies": {
-    "eslint": "^6.8.0"
+    "eslint": "^6.8.0",
+    "husky": "^4.2.3"
+  },
+  "husky": {
+     "hooks": {
+       "pre-commit": "npm run lint-fix && git add"
+     }
   }
 }
