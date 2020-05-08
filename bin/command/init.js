@@ -5,26 +5,32 @@ const ora = require('ora')
 const download = require('download-git-repo')
 const program = require('commander')
 
-const { initQuestion, templateObj } = require('./question.js')
+const question = require('../source/question.js')
+const repo = require('../source/repo.js')
 
 /**
  * 初始化，询问
  */
 async function init() {
-  const { templateName, projectName } = await inquirer.prompt(initQuestion)
+  const res = await inquirer.prompt(question)
+  const { templateName, projectName, exit } = res
+  // 退出
+  if (exit) {
+    return false
+  }
   if (!projectName) {
     console.log(chalk.red('\n 项目名称不可为空! \n '))
     program.help()
     return
   }
-  const url = templateObj[templateName].url
 
   console.log(chalk.white('\n Start generating... \n'))
-  // 出现加载图标
+  // 加载图标
   const spinner = ora('Downloading...')
   spinner.start()
+  // 下载
   download(
-    url,
+    repo[templateName].url,
     projectName,
     { clone: true },
     err => {
