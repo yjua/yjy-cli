@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-const inquirer = require('inquirer') // npm i inquirer -D
+const inquirer = require('inquirer')
 const chalk = require('chalk')
 const ora = require('ora')
 const download = require('download-git-repo')
@@ -35,6 +35,7 @@ async function init() {
       }
       // 结束加载图标
       spinner.succeed()
+
       console.log(chalk.green('\n Generation completed!'))
       console.log('\n To get started')
       console.log(`\n   ${chalk.green.bold(`cd ${projectName}`)} `)
