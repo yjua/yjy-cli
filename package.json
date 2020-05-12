@@ -1,6 +1,6 @@
 {
   "name": "@yjua/yjy-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "自定义前端管理工具，根据内置多模板一键生成基础项目",
   "main": "index.js",
   "bin": {
