@@ -13,10 +13,10 @@ const repo = require('../source/repo.js')
  */
 async function init() {
   const res = await inquirer.prompt(question)
-  const { templateName, projectName, exit } = res
+  const { templateName, projectName } = res
   // 退出
-  if (exit) {
-    return false
+  if (templateName === 'exit') {
+    return
   }
   if (!projectName) {
     console.log(chalk.red('\n 项目名称不可为空! \n '))

@@ -1,5 +1,5 @@
 {
-  "name": "yjy-cli",
+  "name": "@yjua/yjy-cli",
   "version": "1.0.0",
   "description": "自定义前端管理工具，根据内置多模板一键生成基础项目",
   "main": "index.js",
@@ -15,14 +15,14 @@
   "license": "MIT",
   "dependencies": {
     "chalk": "^3.0.0",
-    "commander": "^5.0.0",
+    "commander": "^5.1.0",
     "download-git-repo": "^3.0.2",
     "inquirer": "^7.1.0",
-    "ora": "^4.0.3"
+    "ora": "^4.0.4"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
-    "husky": "^4.2.3",
+    "husky": "^4.2.5",
     "lint-staged": "^10.2.2"
   },
   "husky": {

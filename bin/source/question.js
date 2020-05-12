@@ -30,10 +30,6 @@ module.exports = [
     when(answer) {
       return answer.templateName !== 'exit'
     }
-  }, {
-    type: 'confirm',
-    name: 'exit',
-    message: '是否要退出？'
   }
 ]
 
