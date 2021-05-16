@@ -15,18 +15,25 @@
   "license": "MIT",
   "dependencies": {
     "chalk": "^3.0.0",
-    "commander": "^5.0.0",
+    "commander": "^5.1.0",
     "download-git-repo": "^3.0.2",
     "inquirer": "^7.1.0",
-    "ora": "^4.0.3"
+    "ora": "^4.0.4"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
-    "husky": "^4.2.3"
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.2"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint-fix && git add"
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.{js, vue, css}": [
+      "npm run lint-fix",
+      "git add"
+    ]
   }
 }
