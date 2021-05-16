@@ -1,10 +1,10 @@
 {
   "name": "@yjua/cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "自定义前端管理工具，根据内置多模板一键生成基础项目",
   "main": "index.js",
   "bin": {
-    "yjy": "./bin/index.js"
+    "yjua": "./bin/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -23,7 +23,7 @@
   "devDependencies": {
     "eslint": "^6.8.0",
     "husky": "^4.2.5",
-    "lint-staged": "^10.2.2"
+    "lint-staged": "^10.5.4"
   },
   "husky": {
     "hooks": {

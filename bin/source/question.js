@@ -24,12 +24,13 @@ module.exports = [
         type: 'confirm'
       }
     ]
-  }, {
-    name: 'projectName',
-    message: '请输入项目名称(文件名称不能已存在)：',
-    when(answer) {
-      return answer.templateName !== 'exit'
-    }
   }
+  // {
+  //   name: 'projectName',
+  //   message: '请输入项目名称(文件名称不能已存在)：',
+  //   when(answer) {
+  //     return answer.templateName !== 'exit'
+  //   }
+  // }
 ]
 

@@ -7,7 +7,7 @@
 ## install
 
 ```shell
-npm i @yjua/yjy-cli -g
+npm i @yjua/cli -g
 ```
 
 
@@ -15,7 +15,7 @@ npm i @yjua/yjy-cli -g
 ## 使用
 
 ```shell
-yjy init
+yjua init
 ```
 
 
